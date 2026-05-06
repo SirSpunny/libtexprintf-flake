@@ -43,7 +43,7 @@ nix build .
 
 ## How the build works
 
-libtexprintf is an autotools project (`configure.ac` + `Makefile.am`). This flake does not implement any custom build logic - it simply uses Nix's `autoreconfHook` to invoke the project's own preconfigured autotools pipeline (`autoreconf`  `./configure`  `make`  `make install`).
+libtexprintf is an autotools project (`configure.ac` + `Makefile.am`). This flake does not implement any custom build logic - it simply uses Nix's `autoreconfHook` to invoke the project's own preconfigured autotools pipeline (`autoreconf` -> `./configure` -> `make` -> `make install`).
 
 ## License
 
